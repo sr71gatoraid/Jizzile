@@ -4,13 +4,20 @@ Portable audio-derived radar and missile-overlay toolkit for offline War Thunder
 
 ## Download
 
-Download [**Jizzile-0.10.1-Portable.zip**](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.10.0/Jizzile-0.10.1-Portable.zip), extract the complete folder, and open **Jizzile.exe**. Keep its bundled files together. No compiler, .NET installation or GitHub login is required on recipient PCs.
+Download [**Jizzile-0.11.0-Portable.zip**](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.10.0/Jizzile-0.11.0-Portable.zip), extract the complete folder, and open **Jizzile.exe**. Keep its bundled files together. No compiler, .NET installation or GitHub login is required on recipient PCs.
 
 The source is maintained locally; this repository distributes binaries and update manifests only.
 
 ## Updates
 
 In Jizzile, open **Settings → Advanced → Check for updates**, then **Install update**. Close War Thunder before installing. Only changed files are downloaded, including sound banks when needed. Personal settings and calibration memories in `Data` are preserved. Open Jizzile after the completion message.
+
+## Version 0.11.0 — Aircraft preview
+
+- Integrated experimental J85 aircraft detection and blue desktop/radar markers.
+- 14 missile signatures and three references; existing calibration/settings retained.
+- One shared aircraft code; overlaps and near-field emitters are withheld. All-airframe and multi-aircraft tracking remain incomplete.
+- Full audit and standalone regressions passed; game/headset testing remains unverified. Read the release notes and AIRCRAFT-PREVIEW.txt.
 
 ## Version 0.10.1
 
