@@ -4,13 +4,19 @@ Portable audio-derived radar and missile-overlay toolkit for offline War Thunder
 
 ## Download
 
-Download [**Jizzile-0.10.0-Portable.zip**](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.10.0/Jizzile-0.10.0-Portable.zip), extract the complete folder, and open **Jizzile.exe**. Keep its bundled files together. No compiler, .NET installation or GitHub login is required on recipient PCs.
+Download [**Jizzile-0.10.1-Portable.zip**](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.10.0/Jizzile-0.10.1-Portable.zip), extract the complete folder, and open **Jizzile.exe**. Keep its bundled files together. No compiler, .NET installation or GitHub login is required on recipient PCs.
 
 The source is maintained locally; this repository distributes binaries and update manifests only.
 
 ## Updates
 
 In Jizzile, open **Settings → Advanced → Check for updates**, then **Install update**. Close War Thunder before installing. Only changed files are downloaded, including sound banks when needed. Personal settings and calibration memories in `Data` are preserved. Open Jizzile after the completion message.
+
+## Version 0.10.1
+
+- Toolbar buttons ordered minimize / fullscreen / close.
+- Play/stop removed; automatic game detection handles listening.
+- Small incremental update; runtime and sound banks are unchanged.
 
 ## Version 0.10.0
 
