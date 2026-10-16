@@ -1,39 +1,79 @@
 # Jizzile
 
-<img src="https://github.com/sr71gatoraid/Jizzile/releases/download/v0.15.1/Jizzile-Icon.png" width="128" height="128" alt="Jizzile cartoon missile icon">
+Portable War Thunder audio tracking, radar and desktop markers, with optional
+squad datalink. Windows x64; no separate .NET/OCR installation for players.
+This repository distributes compiled downloads only. Application source stays local.
 
-Portable Windows audio-based radar, desktop overlays and own-position squad datalink. Built releases and incremental updates are public; application source stays local.
+## Download or update
 
-[Download Jizzile 0.15.1](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.15.1/Jizzile-0.15.1-Portable.zip) · [Latest release notes](https://github.com/sr71gatoraid/Jizzile/releases/latest)
+Get the current portable from [Releases](https://github.com/sr71gatoraid/Jizzile/releases/latest).
+Extract the complete folder and run **Jizzile.exe**. Keep its files together.
+Use **Settings → Setup → Install or verify sound mod** with your actual game
+folder, closing the game when installation is required. Existing users can use
+**Settings → Setup → Check for updates**; only changed managed components download.
+Personal Data, settings and calibrations are preserved.
 
-## Run
+## Squad aircraft sharing in0.16.0
 
-Extract the entire portable folder, run `Jizzile.exe`, and install/verify the matching sound mod for your game folder. Existing users can use **Check for updates** in settings. Updates download changed components and preserve personal settings/calibrations. No separate .NET SDK, Python, Tesseract, FMOD Studio, audio-routing driver or GitHub account is required.
+Create or join under **Settings → Squad → Manage squad**. Share the invitation
+privately with your teammates. Membership reconnects automatically. Update each
+member to0.16.0 for aircraft sharing; old clients keep own-position sharing.
+There is no VPN/Tailscale or extra player dependency to install.
 
-Look straight ahead and press **F8** to capture a new reference calibration when needed. Qualified saved layouts can return automatically; never-seen randomized layouts still need F8.
+- **Green aircraft:** a linked member's own telemetry position.
+- **Solid cyan aircraft:** your locally detected aircraft.
+- **Hollow cyan aircraft with a link cue:** unknown aircraft observed by a squad member.
 
-## New in 0.15.1
+**Share aircraft contacts** and **Shared aircraft on radar** default on, within
+overall squad sharing. Sender observations require a qualified audio reference
+and own telemetry; receivers use their own position/heading without requiring
+a camera reference for this radar layer. Reports retain measurement age, expire
+when stale, and use bounded velocity prediction only when qualified.
 
-- Faster HUD quantity recognition, using known rows and fresh confirmation through short unreadable gaps while retaining stricter zero/refill safeguards.
-- Eight searchable dark settings pages, clearer grouping and independent radar visibility/appearance controls.
-- An actual radar preview pinned above scrolling appearance controls.
-- Production artwork for missile circles, aircraft markers, offscreen arrows, ranges and above/below altitude examples.
-- Clearer control/category icons and cleaner Protection and squad dialog presentation.
+The relay negotiates encrypted aircraft packets without breaking older clients
+and reserves capacity for own-position traffic. Shared aircraft stay on the
+radar: they do not add desktop3D/VR/offscreen aircraft, drive countermeasures,
+or feed missile risk/launch estimates. Allegiance remains unknown. Multiple
+emitters/observers can report the same plane; reports are not automatically fused.
+Same-map invited membership does not confirm the same battle.
 
-Existing tracking, reference memory, HUD inventory, launch estimates, rendering recovery and countermeasure protection are preserved. Sound banks and codebooks remain compatible. The separate shared-unknown-aircraft candidate is not integrated into this release.
+## Gameplay interface
 
-## Squad
+The compact radar automatically listens when one game process is found. Radar
+and desktop markers can run together. The scope uses2/5/10/20km or1/3/6/12mi
+rings with whole-number labels, aircraft motion/altitude, missile risk colors,
+speed arrows, trails and estimated reach explosions when data qualifies.
 
-Open **Settings > Squad > Manage squad**. Set a callsign, create a squad, and copy its invitation for teammates. They paste it and Join. Membership reconnects automatically on startup. Sharing can be paused; Leave forgets local membership. Send the portable ZIP, **not your Data folder**, and keep the invitation private.
+Eight searchable dark settings pages include actual marker/altitude examples,
+a pinned scope preview, appearance sliders, independent radar visibility,
+CM key/inventory, HUD reading, squad, setup/updates, VR and advanced tools.
 
-Green radar aircraft and green desktop squares identify linked members with fresh own-8111 telemetry on a matching map. You must join the same actual battle yourselves; the local API does not verify shared battle or game account identity. 3D squares require valid camera calibration. Latency compensation is bounded prediction. No VPN, port forwarding or player Cloudflare login is needed. The hosted relay uses Cloudflare Free and its quotas apply. Squad markers are not in the native VR bridge.
+- **F8:** look forward/hold steady to center the audio reference.
+- **CM button:** arm/disarm the configured countermeasure key.
+- **Ctrl+Alt+F10:** disarm for the current listening session.
+- **Ctrl+Alt+F9:** toggle desktop markers.
+- **F11 / fullscreen button:** fullscreen; Esc restores window bounds.
 
-## Scope
+Set the correct CM key in Protection. Automatic protection still depends on
+fresh qualified data, focus/input gates and finite stock. Separate HUD flare/
+chaff counts reconcile estimates; weak/missing OCR does not prove zero stock.
+Missile identity persists within a qualified flight/loadout. Exact HUD names
+and a readable supported English layout remain necessary.
 
-Range is decoded from diagnostic audio, not general loudness. Audio cannot prove missile intent or guarantee evasion; urgent close flybys can spend flares when direction is unreliable. A launch reach marker is an estimate, not a seeker lock or guaranteed hit. Aircraft course is estimated movement, not body attitude. Height requires qualified reference and own attitude.
+## Limits and data
 
-Fourteen missile signatures, three cockpit references and eight independent engine-source codes across 247 exterior engine events. Capacity is not a guaranteed unique-aircraft count; aircraft model/team are unknown and game sound-source creation can limit range. Acoustic aircraft markers are desktop-only. Physical-headset validation is not claimed.
+Audio-derived positions, heading, range, risk and launch reach are estimates.
+An explosion means estimated nominal reach, not seeker lock, team identity or
+a guaranteed hit. Synthetic test timing/position error does not prove game
+accuracy or evasion. Each local aircraft code represents an engine emitter,
+not necessarily a distinct aircraft; local acoustic capacity stays unchanged.
 
-37 isolated desktop suites passed for this build. The relay is unchanged; its existing isolated tests and synthetic hosted evidence remain documented in prior releases. Game alignment, geographic latency, rendering performance and headset behavior require user validation.
+Desktop markers require suitable windowed/borderless play and matching current
+horizontal FOV. Optional VR targets Meta Link/OpenXR with DX11/DX12; aircraft/
+squad markers are not implemented in that VR layer. Physical headset alignment
+remains unverified here. All in-game/headset testing remains the user's.
 
-Experimental software for the user's separate/offline diagnostic setup. All in-game tests belong to the user. Releases are published deliberately; this repository is not a live source mirror.
+The portable includes sound banks, codebooks, OCR runtime/models, catalog,
+licenses and optional VR components. Save HUD sample writes locally only when
+clicked. Detailed audio recording is off by default and uses disk space.
+Do not distribute your personal **Data** directory or private squad invitation.
