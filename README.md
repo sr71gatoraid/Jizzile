@@ -1,36 +1,18 @@
 # Jizzile
 
-Portable audio-derived radar and missile-overlay toolkit for offline War Thunder testing.
+Portable Windows audio-based radar and overlay. This repository distributes built releases and incremental updates; source code is kept local.
 
-## Download
+[Download the latest portable build](https://github.com/sr71gatoraid/Jizzile/releases/latest/download/Jizzile-0.12.0-Portable.zip) Â· [Release notes](https://github.com/sr71gatoraid/Jizzile/releases/latest)
 
-Download [**Jizzile-0.11.0-Portable.zip**](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.10.0/Jizzile-0.11.0-Portable.zip), extract the complete folder, and open **Jizzile.exe**. Keep its bundled files together. No compiler, .NET installation or GitHub login is required on recipient PCs.
+Extract the entire portable folder, run `Jizzile.exe`, and install/verify its matching sound mod. Existing users can use **Settings > Advanced > Check for updates**. Close the game before installing changed banks. The updater downloads changed files and preserves personal settings and compatible calibrations. No separate .NET installation or audio-routing driver is required.
 
-The source is maintained locally; this repository distributes binaries and update manifests only.
+## Version 0.12.0
 
-## Updates
+- Broad aircraft preview across 247 exterior engine events, replacing the single J85/F-5 host.
+- Eight independent aircraft-source codes; blue radar symbols and blue square desktop markers.
+- Fourteen missile signatures and all three existing references retained.
+- Native routing, collision handling, camera/source motion, lifecycle, performance and app regressions checked in standalone fixtures.
 
-In Jizzile, open **Settings → Advanced → Check for updates**, then **Install update**. Close War Thunder before installing. Only changed files are downloaded, including sound banks when needed. Personal settings and calibration memories in `Data` are preserved. Open Jizzile after the completion message.
+Aircraft capacity counts engine sources, not guaranteed unique airframes. Extra emitters wait for a free code; aircraft identity and team are unknown. Game-controlled event creation and missing host definitions can prevent detection. Aircraft markers are desktop-only. Read the bundled `AIRCRAFT-PREVIEW.txt` and `AIRCRAFT-COVERAGE.json` for coverage and measurement limitations. In-game and physical-headset validation are not claimed.
 
-## Version 0.11.0 — Aircraft preview
-
-- Integrated experimental J85 aircraft detection and blue desktop/radar markers.
-- 14 missile signatures and three references; existing calibration/settings retained.
-- One shared aircraft code; overlaps and near-field emitters are withheld. All-airframe and multi-aircraft tracking remain incomplete.
-- Full audit and standalone regressions passed; game/headset testing remains unverified. Read the release notes and AIRCRAFT-PREVIEW.txt.
-
-## Version 0.10.1
-
-- Toolbar buttons ordered minimize / fullscreen / close.
-- Play/stop removed; automatic game detection handles listening.
-- Small incremental update; runtime and sound banks are unchanged.
-
-## Version 0.10.0
-
-- Jizzile branding and simplified settings.
-- Smooth nonlinear scope with 2 / 5 / 10 / 20 km rings, or exact 1 / 3 / 6 / 12 mile rings. No radius selector or decimal scope labels.
-- Improved 3D threat validation: descending intercepts, overhead passes, missing elevation, stale/invalid data, and early-response precedence.
-- Incremental compressed downloads, SHA-256 verification, staging, rollback and interrupted-update recovery.
-- Desktop and optional Quest Link/OpenXR presentation. Physical-headset alignment remains unvalidated; start with the bundled standalone headset test.
-
-Read `README.txt` and `VR/README.txt` in the portable for setup, calibration, countermeasure settings and limitations. Risk colors are geometric estimates, not hit probabilities. No model-specific remaining missile range is inferred from unidentified audio signatures.
+This remains experimental software for the user's separate/offline diagnostic setup. Updates are published deliberately; the repository is not a live mirror of local work.
