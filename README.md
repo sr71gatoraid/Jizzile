@@ -2,11 +2,14 @@
 
 Portable Windows audio-based radar and overlay. This repository distributes built releases and incremental updates; source code is kept local.
 
-[Download the latest portable build](https://github.com/sr71gatoraid/Jizzile/releases/latest/download/Jizzile-0.12.0-Portable.zip) Â· [Release notes](https://github.com/sr71gatoraid/Jizzile/releases/latest)
+[Download the latest portable build](https://github.com/sr71gatoraid/Jizzile/releases/latest/download/Jizzile-0.12.1-Portable.zip) Â· [Release notes](https://github.com/sr71gatoraid/Jizzile/releases/latest)
 
 Extract the entire portable folder, run `Jizzile.exe`, and install/verify its matching sound mod. Existing users can use **Settings > Advanced > Check for updates**. Close the game before installing changed banks. The updater downloads changed files and preserves personal settings and compatible calibrations. No separate .NET installation or audio-routing driver is required.
 
-## Version 0.12.0
+## Version 0.12.1
+
+Hotfix for missing aircraft markers: the aircraft calibration tone now routes directly from its source rather than through a receiver branch that can multiply its level. Aircraft signal levels have more quantization margin. Collision rejection remains enabled. This responds to the user's 0.12.0 logs; live-game retesting of the hotfix remains pending.
+
 
 - Broad aircraft preview across 247 exterior engine events, replacing the single J85/F-5 host.
 - Eight independent aircraft-source codes; blue radar symbols and blue square desktop markers.
