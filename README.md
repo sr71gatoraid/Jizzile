@@ -1,13 +1,13 @@
 # Jizzile
 
-Portable Windows audio-based aircraft/missile display with squad datalink. This repository hosts downloads; application source is not published here.
+Portable Windows audio-based aircraft/missile display with squad datalink. This repository hosts downloads; application source stays local.
 
-[Download Jizzile 0.18.0](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.18.0/Jizzile-0.18.0-Portable.zip) · [Release notes](https://github.com/sr71gatoraid/Jizzile/releases/tag/v0.18.0)
+[Download Jizzile 0.18.1](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.18.1/Jizzile-0.18.1-Portable.zip) · [Release notes](https://github.com/sr71gatoraid/Jizzile/releases/tag/v0.18.1)
 
-Extract the entire folder and run `Jizzile.exe`. Existing installations can use **Check for updates** to download only changed components. Personal Data, settings/calibrations and unchanged sound banks remain intact.
+Extract the complete folder and run Jizzile.exe. Existing users can Check for updates; unchanged components are reused and personal Data/settings/calibrations are preserved.
 
-0.18.0 adds an opt-in external SteamVR overlay, includes squad roll/alignment repairs, and ignores Xbox X+Y for a Y zoom binding. The VR renderer runs outside the game; the former injected layer is retired. Wired Quest uses Quest Link plus SteamVR; Steam Link is not required.
+0.18.1 adds explicit F8-centered VR reference/body/headset transforms, saved angular alignment controls, and a radar text-size slider. After updating, look straight ahead in the cockpit, press F8 and hold still. Fine-tune remaining steady offset under Settings > VR; positive vertical alignment raises markers.
 
-Live VR markers remain experimental. Synthetic headset tests passed, but alignment during flight/head motion/zoom still needs user validation. Positions, target identity and reachability are estimates. See the included README for setup and display limitations.
+Wired Quest uses Quest Link over USB plus SteamVR. In SteamVR Settings > OpenXR select SteamVR as the active runtime before launching War Thunder with VR enabled. Steam Link is not required. Enable the desired Jizzile VR displays and Save changes.
 
-For OpenXR game launch, first use **SteamVR Settings > OpenXR > Set SteamVR as OpenXR Runtime**. Merely opening SteamVR while the game still uses Meta as its active runtime is insufficient. Jizzile does not change this setting automatically.
+VR remains experimental. Isolated checks validate the coordinate calculations, not actual flight registration or guaranteed target identity/reach. See the included README and release notes for behavior, limitations and testing scope.
