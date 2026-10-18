@@ -9,3 +9,5 @@ Extract the entire folder and run `Jizzile.exe`. Existing installations can use 
 0.18.0 adds an opt-in external SteamVR overlay, includes squad roll/alignment repairs, and ignores Xbox X+Y for a Y zoom binding. The VR renderer runs outside the game; the former injected layer is retired. Wired Quest uses Quest Link plus SteamVR; Steam Link is not required.
 
 Live VR markers remain experimental. Synthetic headset tests passed, but alignment during flight/head motion/zoom still needs user validation. Positions, target identity and reachability are estimates. See the included README for setup and display limitations.
+
+For OpenXR game launch, first use **SteamVR Settings > OpenXR > Set SteamVR as OpenXR Runtime**. Merely opening SteamVR while the game still uses Meta as its active runtime is insufficient. Jizzile does not change this setting automatically.
