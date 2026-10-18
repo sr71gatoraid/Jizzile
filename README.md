@@ -1,16 +1,11 @@
 # Jizzile
 
-Portable acoustic aircraft/missile tracking, radar and desktop markers, countermeasure assistance, HUD recognition, estimated launch reach and squad datalink.
+Portable Windows audio-based aircraft/missile display with squad datalink. This repository hosts downloads; application source is not published here.
 
-Download the latest portable from [Releases](https://github.com/sr71gatoraid/Jizzile/releases/latest). Extract the entire folder and start **Jizzile.exe**. In Setup select War Thunder and install/verify the included sound mod with the game closed. Existing users can use the incremental Update command. Restart the game after sound-bank changes.
+[Download Jizzile 0.18.0](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.18.0/Jizzile-0.18.0-Portable.zip) · [Release notes](https://github.com/sr71gatoraid/Jizzile/releases/tag/v0.18.0)
 
-## Current: 0.17.6
+Extract the entire folder and run `Jizzile.exe`. Existing installations can use **Check for updates** to download only changed components. Personal Data, settings/calibrations and unchanged sound banks remain intact.
 
-Restores native radar altitude chevrons and open vector strokes. A geometry conversion was dropping unfilled paths; WPF previews worked, which hid the gap in earlier checks. New native pixel tests cover both altitude styles, up/down heads, level/Off behavior and the actual radar recording. Existing zoom controls, OCR improvements, altitude hundreds, calibration/colors and gameplay systems remain. Banks and personal preferences are preserved.
+0.18.0 adds an opt-in external SteamVR overlay, includes squad roll/alignment repairs, and ignores Xbox X+Y for a Y zoom binding. The VR renderer runs outside the game; the former injected layer is retired. Wired Quest uses Quest Link plus SteamVR; Steam Link is not required.
 
-50 isolated desktop suites plus local/hosted compatibility checks pass. Actual game/headset behavior remains user testing.
-
-Settings > Squad > Open squad lets you create/select/join a lobby without sharing a code. Listed lobbies are public; private invitations remain available. See bundled README.txt and SQUAD-LINK.txt for operation/privacy details. Send friends the clean portable ZIP, never your personal Data folder. No VPN or additional player dependency installation is needed.
-
-This public repository distributes releases and incremental components. Application source remains local; detailed maintainer documentation is private. Audio estimates, telemetry, camera references, code capacity and freshness limit accuracy. Dense random-code collisions can withhold ambiguous contacts; the 0.17.0 exclusive lease/preemption experiment is withdrawn. Reach is an estimate, not a guaranteed hit. Public lobbies are open to anyone and do not offer secrecy from the relay. All in-game/headset validation remains the user's.
-
+Live VR markers remain experimental. Synthetic headset tests passed, but alignment during flight/head motion/zoom still needs user validation. Positions, target identity and reachability are estimates. See the included README for setup and display limitations.
