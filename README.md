@@ -1,11 +1,13 @@
 # Jizzile
 
-Portable Windows audio-based aircraft/missile display with squad datalink. This repository hosts downloads; application source stays local.
+Portable aircraft and missile audio display for War Thunder.
 
-[Download Jizzile 0.20.0](https://github.com/sr71gatoraid/Jizzile/releases/download/v0.20.0/Jizzile-0.20.0-Portable.zip) · [Release notes](https://github.com/sr71gatoraid/Jizzile/releases/tag/v0.20.0)
+[Download the latest portable release](https://github.com/sr71gatoraid/Jizzile/releases/latest)
 
-Extract the complete folder and run Jizzile.exe. Existing users can Check for updates; unchanged components are reused and personal Data/settings/calibrations are preserved. This release includes a matching sound-bank update: update/verify the mod with War Thunder closed.
+Current release: **0.20.1 — Cockpit pan stability**.
 
-0.20.0 adds an independent cockpit source-forward signal for roll correction and automatic recovery after random reference restarts. It also reduces audio/tracking CPU work and allocation. No extra frequencies, voices, audio buffer, driver or game DLL are added. Native and synthetic checks pass; live-game accuracy on every airframe is not established.
+Fixes false aircraft identity resets from weak-carrier noise, adds bounded radar continuity through brief decoding gaps, preserves measured direction through position spikes, and improves sideways reference continuation after near-level flight. Sound banks are unchanged from 0.20.0. These are estimates; live game accuracy is not guaranteed.
 
-Wired Quest uses Quest Link over USB plus SteamVR. Steam Link is not required. Independent VR head roll retains the existing full-pose reference path. VR remains experimental. See the included README and release notes for limitations.
+Extract the full portable folder and run `Jizzile.exe`. Existing installations can use **Check for updates** to download only changed components. Preserve your personal `Data` folder when moving installations.
+
+This public repository distributes binaries and update manifests. Application source remains local. Release notes describe verification and remaining limitations.
