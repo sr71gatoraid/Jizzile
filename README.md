@@ -2,14 +2,14 @@
 
 [Download the latest portable release](https://github.com/sr71gatoraid/Jizzile/releases/latest)
 
-Current release: **0.20.6 — Calibration and live-game updates**.
+Current release: **0.20.7 - Calibration feedback sounds**.
 
-Fixes a reproduced cockpit-reference handoff failure that could block ground calibration. Capture is strictly process-only by default, and clean references tolerate loud game mixes. Includes the squadmate duplicate-filter repair.
+F8/center calibration has distinct starting, success and failure sounds. The clips are bundled with the portable app. Prior ground-reference, squad and updater repairs are included.
 
-Extract the full portable folder and run `Jizzile.exe`. Existing users can use **Check for updates**. Preserve `Data`.
+Extract the full portable folder and run Jizzile.exe. Existing users can use Check for updates, then restart Jizzile. Preserve Data.
 
-This release changes one engine definition bank, so exit War Thunder once to install and activate it. After installing 0.20.6, app-only updates can leave War Thunder running; sound-bank updates queue until game exit. No virtual audio cable or extra runtime installation is needed on supported Windows process-loopback systems.
+This release is app-only; War Thunder can remain open when updating from 0.20.6. Sound-bank updates queue until game exit. Audio/calibration.json controls optional cue volume/files. No new dependency installation is required.
 
-Native and isolated checks pass; live game/headset tests remain with users. The reported VR marker-visibility issue remains unresolved. Squad markers require fresh qualified coordinates in the same battle. Public lobbies are discoverable; callsigns are not verified identities.
+In-game testing remains with users. The reported VR marker-visibility issue remains unresolved. Squad markers require fresh qualified coordinates in the same battle. Public lobbies are discoverable; callsigns are not verified identities.
 
-This public repository distributes binaries and update manifests. Application source remains local.
+This public repository distributes binaries and update manifests. Application source remains local.
