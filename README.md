@@ -2,21 +2,14 @@
 
 [Download the latest portable release](https://github.com/sr71gatoraid/Jizzile/releases/latest)
 
-Current release: **0.20.5 - Squadmate duplicate filtering**.
+Current release: **0.20.6 — Calibration and live-game updates**.
 
-Linked squadmates replace matching sound-based aircraft contacts on radar and
-HUD, leaving their green squad markers. This fixes a mismatch between local
-flight-map IDs and squad map fingerprints, plus brief duplicate reappearance
-through audio gaps. The0.20.4 lobby/member-list improvements are included.
+Fixes a reproduced cockpit-reference handoff failure that could block ground calibration. Capture is strictly process-only by default, and clean references tolerate loud game mixes. Includes the squadmate duplicate-filter repair.
 
-Extract the full portable folder and run `Jizzile.exe`. Existing users can use
-**Check for updates**, install, then restart Jizzile. Preserve `Data`.
-Only three app components change; sound banks remain unchanged.
+Extract the full portable folder and run `Jizzile.exe`. Existing users can use **Check for updates**. Preserve `Data`.
 
-Squad markers require valid, fresh coordinates and the same actual battle.
-Public lobbies are discoverable by anyone; callsigns are not verified identities.
-In-game testing remains with users. The reported VR marker visibility issue
-remains unresolved.
+This release changes one engine definition bank, so exit War Thunder once to install and activate it. After installing 0.20.6, app-only updates can leave War Thunder running; sound-bank updates queue until game exit. No virtual audio cable or extra runtime installation is needed on supported Windows process-loopback systems.
 
-This public repository distributes binaries and update manifests. Application
-source remains local.
+Native and isolated checks pass; live game/headset tests remain with users. The reported VR marker-visibility issue remains unresolved. Squad markers require fresh qualified coordinates in the same battle. Public lobbies are discoverable; callsigns are not verified identities.
+
+This public repository distributes binaries and update manifests. Application source remains local.
