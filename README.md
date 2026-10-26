@@ -2,15 +2,17 @@
 
 [Download the latest portable release](https://github.com/sr71gatoraid/Jizzile/releases/latest)
 
-Current release: **0.21.0 - Air reliability overhaul**.
+Current release: **0.21.3 - OCR, calibration and Air improvements**.
 
-Faster qualified calibration, automatic capture recovery, corrected roll transforms, newest-source priority under crowding, distant-threat confirmation and countermeasure salvos. External VR helper v5 improves centering and restart recovery.
+Faster HUD recognition, improved inventory and selected-weapon handling, calibration and capture recovery fixes, and more efficient native drawing. This release also includes the previously unpublished aircraft-engine range definitions.
 
-Extract the complete portable folder and run Jizzile.exe. Existing users can use Check for updates and restart Jizzile. Preserve Data. Updating from 0.20.7 downloads approximately 5.1 MB of changed components.
+Extract the complete portable folder and run Jizzile.exe. Existing users can use **Check for updates**. Preserve **Data**. Updating from 0.21.0 downloads approximately 3.8 MB of changed components.
 
-This release includes three matching Air sound definition banks and an updated codebook. Sound-bank activation requires War Thunder to exit; app-only updates retain their game-open workflow. Use Install / verify mod for the matching profile. No additional dependency installation is needed for desktop use. The external VR backend requires SteamVR and a configured PC headset.
+This update includes matching aircraft-engine/event definition banks and a profile change. **War Thunder must exit before changed banks can be activated**; the update can be queued while the game is open. App-only updates retain their game-open workflow. Use **Install / verify mod** for the matching profile. Desktop dependencies are bundled. The external VR backend still requires SteamVR and a configured PC headset.
 
-The measured analysis pipeline uses 32.4% less CPU time and 10.1% fewer allocations than 0.20.7 on matched audio. These component measurements do not establish whole-game FPS. Forty-six applicable isolated suites pass; thirteen display/audio-endpoint suites were blocked by the locked test session. Actual game/headset confirmation remains pending.
+82 aircraft-engine events now advertise 10,000 rather than 3,000 units. This does not guarantee 10 km detection: the game controls which sound sources exist.
+
+57 combined isolated suites plus scalar-fallback checks passed. Matched saved-pixel OCR measurements show about 49% lower focused processing time and 37% lower OCR-worker CPU use. These component measurements do not establish whole-game FPS or universal live accuracy. Unreadable or unusual HUD text can still withhold fresh readings; retained inventory is identified separately. Game/headset confirmation remains user testing.
 
 Source capacity remains finite: 14 missile codes and eight aircraft-engine codes. Some unguided rockets share missile sound events; extreme bursts can briefly disturb distant measurements. Audio cannot establish seeker intent or guarantee countermeasure success.
 
